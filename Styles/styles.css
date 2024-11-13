@@ -1,0 +1,52 @@
+html, body {
+    background: linear-gradient(to right, #05d3e4, #0e5191);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.backgroundDiv {
+    background: linear-gradient(to right, #05d3e4, #0e5191);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.location {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #037591;
+}
+
+.location img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.location input {
+    background-color: #037591;
+    color: white;
+    border: none;
+    font-size: 25px;
+    flex: 1;
+}
+
+.weather, .nextWeather {
+    background-color: #037591;
+    padding: 10px;
+    color: white;
+}
+
+.weather div, .nextWeather {
+    text-align: center;
+}
+
+.dayDiv {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}

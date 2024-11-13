@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+    <div class="backgroundDiv">
+        <div class="location">
+            <img src="/Images/location-pin.png" alt="Location Pin Image" class="imgLocation" onclick="search()">
+            <input type="text" placeholder="City Name" id="city">
+        </div>
+        <div class="week">
+            <h1 class="dateStyle"><b id="day">Week</b> <b id="date">Day</b> <b id="months">Month</b></h1>
+        </div>
+        <div class="weather">
+            <div class="cloudDiv">
+                <div class="imgPosition"><img src="/Images/01n.png" alt="Cloud Icon" id="icon"></div>
+                <div><p class="desc" id="description">CLOUD</p></div>
+            </div>
+            <div>
+                <div class="tempPosition">
+                    <p class="temperature" id="temp">°C</p>
+                </div>
+                <div>
+                    <p class="feelLike">Feels like <b class="avgTemp" id="average">AVG</b></p>
+                </div>
+            </div>
+            <div>
+                <div class="min_maxTempDiv">
+                    <p class="minmaxTemp">
+                        <img src="/Images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                        <b id="min">Min</b>
+                        <img src="/Images/keyboard_arrow_up_FILL0_wght400_GRAD0_opsz24.png" alt="" class="downArrow">
+                        <b id="max">Max</b>
+                    </p>
+                </div>
+                <div class="humidDiv">
+                    <p>Wind: <b id="wind">Km/h</b></p>
+                    <p>Humidity: <b id="humid">%</b></p>
+                </div>    
+            </div>  
+        </div>
+        <div class="nextWeather" id="nextWeather"></div>
+    </div>
+    <script src="/Script/website.js"></script>
+</body>
+</html>
+
